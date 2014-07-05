@@ -1,0 +1,32 @@
+{
+	"name": "didweb/myt-sniper",
+	"description": "MyT Framework - Coleccion de codigos",
+	"keywords": ["funciones", "colecicon codigos"],
+	"homepage": "https://github.com/Didweb",
+	"time": "2014-7-5",
+	"type": "MyT-framework",
+	"license": "GPLv3",
+	"authors": [
+		{
+			"name": "Eduard Pinuaga",
+			"email": "info@did-web.com",
+			"homepage": "http://www.did-web.com",
+			"role": "Developer"
+		}
+	],
+	"repositories":[
+	
+			{
+            "type": "vcs",
+            "url": "git@github.com:Didweb/MyTsniper.git"
+        }
+	],
+	"support": {
+		"email": "info@did-web.com",
+		"source": "https://github.com/Didweb/MyTsniper",
+		"issues": "https://github.com/Didweb/MyTsniper/issues"
+    },
+	"require": {
+		"phpunit/phpunit": "4.1.*"
+	}
+}
