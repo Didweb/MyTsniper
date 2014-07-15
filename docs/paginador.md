@@ -1,7 +1,7 @@
 Paginador
 =========
 
-[Inicio Docuemtacion][1]
+[Inicio Documetación][1]
 
 Este Sniper lo utilizo par acrear las paginaciones de los listados
 

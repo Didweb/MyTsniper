@@ -1,7 +1,7 @@
 Mapeatxt
 ========
 
-[Inicio Docuemtacion][1]
+[Inicio Documetación][1]
 
 Este Sniper sirve para pasar parámetros a una cadena de texto, para cuando una cadena de texto situada en mis diccionarios `locale`, tiene ciertos parámetros que se crean en el controlador.
 
