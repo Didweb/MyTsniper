@@ -34,4 +34,4 @@ Un ejemplo de utilización de este servicio:
 
 Este ejemplo devuelve el string: `Cambia esto xxx y esto yyy y esto zzz` .
 
-[1]: Inicio_Docuemntacion.md
+[1]: Inicio_Documentacion.md

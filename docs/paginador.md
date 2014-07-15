@@ -18,4 +18,4 @@ $sniper = $this->cargaSniper('paginador');
 
 ```
 
-[1]: Inicio_Docuemntacion.md
+[1]: Inicio_Documentacion.md
