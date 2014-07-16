@@ -12,10 +12,12 @@ class paginador_SN
 	private $previa;
 	private $proxima;
 	
+	private $reginicio;
+	private $regfinal;
+	
 	public function inicio($totalregistros,$pagina,$rpag=10,$pagpaginador=3)
 	{
 
-		
 		$this->setTotalregistros($totalregistros,$rpag);
 		$this->setRegpagina($rpag);
 		$this->setTotalpaginas();
@@ -26,7 +28,54 @@ class paginador_SN
 		$this->setProxima();
 		$this->setPagpaginador($pagpaginador);
 		
+		$this->setInicio();
+		$this->setFinal();
+		
+		
 	}
+	
+	public function setInicio()
+	{
+		if($this->getPagina()==1){
+			$reginicio = $this->getPagina();
+			} else {
+			$reginicio = $this->getPagina()*$this->getRegpagina();	
+			}
+		
+
+		if($reginicio==1) {
+				$reginicio=$reginicio; } 
+				else {
+				$reginicio=$reginicio+1; }
+				
+		$this->reginicio = $reginicio;
+		return $this;
+	}
+	
+	
+	
+	public function getInicio()
+	{
+		return $this->reginicio;	
+	}
+	
+	
+	
+	public function setFinal()
+	{
+		$regfinal = ($this->getInicio()+$this->getRegpagina())-1;
+		$this->regfinal = $regfinal;
+		return $this;
+	}
+	
+	
+	
+	public function getFinal()
+	{
+		return $this->regfinal;	
+	}	
+	
+	
 	
 	public function setPagina($pagina)
 	{

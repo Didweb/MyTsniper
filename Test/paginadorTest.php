@@ -53,6 +53,13 @@ class Paginacion extends PHPUnit_Framework_TestCase
 		$lapagina 		= $this->sniper->clase->getPagina();
 		$this->assertEquals(5,$lapagina);
 		
+		$inicio = $this->sniper->clase->getInicio();
+		$final = $this->sniper->clase->getFinal();
+		$this->assertEquals(51,$inicio);
+		$this->assertEquals(60,$final);
+		
+
+		
 		$previa 		= $this->sniper->clase->getPrevia();
 		$this->assertEquals(4,$previa);
 		
@@ -84,6 +91,14 @@ class Paginacion extends PHPUnit_Framework_TestCase
 		$paginador 		= $this->sniper->clase->getPagpaginador();
 		$this->assertInternalType('array',$paginador);
 		
+	
+		// con el incio en priemra pagina
+		$pagina = 1;
+		$this->sniper->clase->inicio($totalregistros,$pagina,$rpag=10,$pagpaginador=3);
+		$inicio = $this->sniper->clase->getInicio();
+		$this->assertEquals(1,$inicio);
+		
+	
 	}
 	
 	
