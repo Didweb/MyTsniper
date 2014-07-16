@@ -63,7 +63,7 @@ class paginador_SN
 	
 	public function setFinal()
 	{
-		$regfinal = ($this->getInicio()+$this->getRegpagina())-1;
+		$regfinal = ($this->getPagina()*$this->getRegpagina())-($this->getRegpagina()-1);
 		$this->regfinal = $regfinal;
 		return $this;
 	}
