@@ -48,7 +48,8 @@ class paginador_SN
 				else {
 				$reginicio=$reginicio+1; }
 				
-		$this->reginicio = $reginicio;
+		$this->reginicio = $reginicio - $this->getRegpagina();
+		if($this->reginicio<1) {$this->reginicio = 1;}
 		return $this;
 	}
 	
@@ -63,7 +64,7 @@ class paginador_SN
 	
 	public function setFinal()
 	{
-		$regfinal = ($this->getPagina()*$this->getRegpagina())-($this->getRegpagina()-1);
+		$regfinal = $this->getPagina()*$this->getRegpagina();
 		$this->regfinal = $regfinal;
 		return $this;
 	}
