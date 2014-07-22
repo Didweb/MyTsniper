@@ -102,9 +102,13 @@ echo "Nombre para guardar = ".$sniper->clase->resizeImg($tmpname,$save_name,$nom
 
 Necesita los siguientes parámetros:
 
-**$tmpname** : Es el archivo subido mediante $_FILES `$_FILES['imagen']['tmp_name']`.
-**$save_name** : Es el nombre que se quiere del archivo, en nuestro caso lo mandamos en el formulario de subir archivo con un $_POST `$_POST['nombre']`.
-**$nombre_enviado** : Es el nombre del archivo enviado por el sistema mediante $_FILES `$_FILES['imagen']['name']`
+**$tmpname** : Es el archivo subido mediante $_FILES **$_FILES['imagen']['tmp_name']**.
+
+
+**$save_name** : Es el nombre que se quiere del archivo, en nuestro caso lo mandamos en el formulario de subir archivo con un $_POST **$_POST['nombre']**.
+
+**$nombre_enviado** : Es el nombre del archivo enviado por el sistema mediante $_FILES **$_FILES['imagen']['name']**.
+
 
 
 En este ejemplo ejecuta los 3 tamaños y devuelve el nombre final del archivo para poder almacenar.
