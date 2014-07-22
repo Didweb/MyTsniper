@@ -17,8 +17,6 @@ El Sniper realiza las siguientes acciones:
 - Permite los siguientes formatos: jpg, jepg, png y gif,
 
 
-# Características
-
 Se llama `resize`.
 
 Para llamarlo desde el controlador:
