@@ -118,30 +118,42 @@ El nombre de archivo que devuelve no contiene el prefijo.
 
 En los directorios se almacenaran de esta forma en este ejemplo:
 
+```
 Directorio: p1
+
 --- Nombre de archivo: p1_NOMBRE.jpg 
 
 Directorio: p2
+
 --- Nombre de archivo: p2_NOMBRE.jpg 
 
 Directorio: m
+
 --- Nombre de archivo: m_NOMBRE.jpg 
+
+``` 
 
 Pero nos devuelve el nombre: NOMBRE.jpg luego en el controlador ya determinaremos que imagen queremos si la m_NOMBRE.jpg o la p1_NOMBRE.jpg
 
 
 En caso de que el usuario volviera a subir otra imagen con el mismo nombre, para evitar sobreescribir el archivo el nombre se cambia  la siguiente forma:
-
+```
 Directorio: p1
+
 --- Nombre de archivo: p1_NOMBRE.jpg 
+
 --- Nombre de archivo: p1_1_NOMBRE.jpg 
 
 Directorio: p2
+--- Nombre de archivo: p2_NOMBRE.jpg 
+
 --- Nombre de archivo: p2_1_NOMBRE.jpg 
 
 Directorio: m
---- Nombre de archivo: m_1_NOMBRE.jpg 
+--- Nombre de archivo: m_NOMBRE.jpg 
 
+--- Nombre de archivo: m_1_NOMBRE.jpg 
+```
 Poniendo un prefijo con el numero de imagen, el método devuelve el nombre: 1_NOMBRE.jpg
 
 
