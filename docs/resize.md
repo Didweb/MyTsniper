@@ -51,7 +51,7 @@ Un ejemplo de utilización de este servicio:
 
 ### Configuración
 
-Se ha de configurar una cadena donde determinaremos el directorio donde guardara las imágenes del mismo tamaño, la calidad de compresión, Ancho imagen, el alto del imagen y si queremos que recorte o bien reduzca.
+Se ha de configurar una cadena donde determinaremos el directorio donde guardara las imágenes del mismo tamaño, la calidad de compresión, el ancho de la imagen, el alto de la imagen y si queremos que recorte o bien reduzca.
 
 La cadena tendrá un aspecto similar a este: `p1,75,50,50,1|p2,100,200,100,0|m,100,125,200,1`
 
@@ -88,6 +88,7 @@ Se ha de iniciar la clase con ...
 Donde: 
 
 **'pruebas/fotos_pruebas'** Se refiere al directorio principal delas imágenes, dentro de este directorio se crearan los subdirectorios de los tamaños. En este caso si no existe el directorio `fotos_pruebas` este se crea de forma automática.
+
 **$patron** Se refiere a la constante donde almacenaremos los tamaños y su configuración.
 
 
@@ -102,12 +103,12 @@ echo "Nombre para guardar = ".$sniper->clase->resizeImg($tmpname,$save_name,$nom
 
 Necesita los siguientes parámetros:
 
-**$tmpname** : Es el archivo subido mediante $_FILES **$_FILES['imagen']['tmp_name']**.
+**$tmpname** : Es el archivo subido mediante **$_FILES['imagen']['tmp_name']**.
 
 
-**$save_name** : Es el nombre que se quiere del archivo, en nuestro caso lo mandamos en el formulario de subir archivo con un $_POST **$_POST['nombre']**.
+**$save_name** : Es el nombre que se quiere del archivo, en nuestro caso lo mandamos en el formulario de subir archivo con un **$_POST['nombre']**.
 
-**$nombre_enviado** : Es el nombre del archivo enviado por el sistema mediante $_FILES **$_FILES['imagen']['name']**.
+**$nombre_enviado** : Es el nombre del archivo enviado por el sistema mediante **$_FILES['imagen']['name']**.
 
 
 
