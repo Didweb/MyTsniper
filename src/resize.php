@@ -295,7 +295,7 @@ class resize_SN
 	
 	public function setDir_destino($valor)
 	{
-		$valor = __DIR__ . '/../'.$valor;
+		
 		if(!is_dir($valor)){
 			mkdir($valor, 0777);
 			fopen($valor."/index.php","w+");
