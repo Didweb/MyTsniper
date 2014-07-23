@@ -47,8 +47,10 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 - [Mapeatxt][2] : Sirve para pasar parametros a un string.
 - [Paginador][3] : Sirve para crear las paginaciones de los listados.
 - [Resize][4] : Almacena y redimensiona imágenes (jpg,jepg, png y gif).
+- [slug][5] : Creador de Slugs par alas urls y limpieza de cadenas.
 
 [1]: https://github.com/Didweb/MyT
 [2]: mapeatxt.md
 [3]: paginador.md
 [4]: resize.md
+[5]: slug.md
