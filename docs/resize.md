@@ -1,7 +1,7 @@
 Resize
 ========
 
-[Inicio Documetación][1]
+[Inicio Documentación][1]
 
 Este Sniper sirve para almacenar en carpetas y redimensionar imágenes.
 

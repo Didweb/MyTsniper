@@ -1,7 +1,7 @@
 Slug
 ========
 
-[Inicio Documetación][1]
+[Inicio Documentación][1]
 
 Este pequeño Sniper se encarga de crear slugs para las urls o cualquier limpieza de texto.
 

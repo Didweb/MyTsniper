@@ -48,9 +48,11 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 - [Paginador][3] : Sirve para crear las paginaciones de los listados.
 - [Resize][4] : Almacena y redimensiona imágenes (jpg,jepg, png y gif).
 - [Slug][5] : Creador de Slugs par alas urls y limpieza de cadenas.
+- [ArrayOrder][6] : Ordenar array asociativos, multidimensionales, de forma aleatoria, por un campo en ASC / DESC, etc.
 
 [1]: https://github.com/Didweb/MyT
 [2]: mapeatxt.md
 [3]: paginador.md
 [4]: resize.md
 [5]: slug.md
+[6]: arrayorder.md
