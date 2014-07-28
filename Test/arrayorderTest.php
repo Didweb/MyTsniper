@@ -46,5 +46,22 @@ class ArrayOrderTest extends PHPUnit_Framework_TestCase
 		
 	}	
 	
+	
+	public function test_Duplicados()
+	{
+		
+		
+			$matriz[] =array('nombre'=>'pepito','apellido'=>'gomez');
+			$matriz[] =array('nombre'=>'juan','apellido'=>'soto');
+			$matriz[] =array('nombre'=>'pepito','apellido'=>'fernandez');
+			$matriz[] =array('nombre'=>'pedro','apellido'=>'hernan');
+		
+		$res = $this->sniper->clase->elimina_duplicados($matriz,'nombre');
+		
+		$this->assertEquals('pedro', $res[2]['nombre']);
+		
+		
+	}	
+	
 }	
 ?>	

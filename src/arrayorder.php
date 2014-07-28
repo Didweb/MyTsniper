@@ -41,5 +41,21 @@ class arrayorder_SN
 	} 
 	
 	
+	// Elimina duplicados de un array
+	public function elimina_duplicados($array, $campo)
+	{
+		  foreach ($array as $sub)
+		  {
+			$cmp[] = $sub[$campo];
+		  }
+	  $unique = array_unique($cmp);
+		  foreach ($unique as $k => $campo)
+		  {
+			$resultado[] = $array[$k];
+		  }
+	  return $resultado;
+	}
+	
+	
 }
 ?>	

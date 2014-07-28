@@ -24,6 +24,7 @@ Existen diferentes métodos para diferentes funcionalidades por el momento exist
 
 - Método **array_orderby**. Ordenar arrays multidimensionales por un campo o más y determinar el orden ASC o bien DESC.
 - Método **shuffle_assoc**. Ordenar aleatorio para arrays multidimensionales y asociativos.
+- Método **elimina_duplicados**. Elimina duplicados concretando un campo.
 
 ## Método array_orderby()
 
@@ -74,6 +75,7 @@ $matriz[0] = array(	'campo1' => 1,
 					);
 ```
 
+
 ## Método shuffle_assoc
 
 Para llamar a este método aremos...
@@ -85,5 +87,16 @@ Para llamar a este método aremos...
 Se obtiene dentro de `resultado` el array que pasemos pero de forma aleatoria.
 
 
+
+## Modo elimina_duplicados
+
+Para llamar a este método ...
+
+```
+$resultado = $this->elimina_duplicados($matriz,$campo);
+
+```
+
+Donde el parámetro `matriz` es para determinar en que array actuar y el `campo` cual es el campo que no puede tener duplicados y servirá de criterio para eliminar valores del array.
 
 [1]: Inicio_Documentacion.md
