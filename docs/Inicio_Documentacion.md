@@ -49,6 +49,7 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 - [Resize][4] : Almacena y redimensiona imágenes (jpg,jepg, png y gif).
 - [Slug][5] : Creador de Slugs par alas urls y limpieza de cadenas.
 - [ArrayOrder][6] : Ordenar array asociativos, multidimensionales, de forma aleatoria, por un campo en ASC / DESC, etc.
+- [Ale][7] : Crea cadenas de números y letras aleatoriamente.
 
 [1]: https://github.com/Didweb/MyT
 [2]: mapeatxt.md
@@ -56,3 +57,4 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 [4]: resize.md
 [5]: slug.md
 [6]: arrayorder.md
+[7]: ale.md
