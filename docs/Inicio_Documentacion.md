@@ -51,6 +51,8 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 - [ArrayOrder][6] : Ordenar array asociativos, multidimensionales, de forma aleatoria, por un campo en ASC / DESC, etc.
 - [Ale][7] : Crea cadenas de números y letras aleatoriamente.
 - [esRobot][8] : Comprueba si una visita es un robot o un usario.
+- [Formatostxt][9] : Para pasar formatos a los textos.
+
 
 [1]: https://github.com/Didweb/MyT
 [2]: mapeatxt.md
@@ -60,3 +62,4 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 [6]: arrayorder.md
 [7]: ale.md
 [8]: esrobot.md
+[9]: formatostxt.md
