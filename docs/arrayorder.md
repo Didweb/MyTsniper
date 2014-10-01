@@ -32,7 +32,8 @@ Existen diferentes métodos para diferentes funcionalidades por el momento exist
 Para llamar a este método 
 
 ```
-	$resultado = $this->array_orderby($nube, 'contador', SORT_DESC);
+        $sniper = $this->cargaSniper('arrayorder');
+	$resultado = $sniper->clase->array_orderby($nube, 'contador', SORT_DESC);
 
 ```
 
@@ -56,7 +57,8 @@ $matriz[1] = array(	'campo1' => 5,
 Y para ordenarlo por ejemplo: por el campo `campo2` de forma ASC...
 
 ```
-	$resultado = $this->array_orderby($matriz, 'campo2', SORT_ASC);
+	$sniper = $this->cargaSniper('arrayorder');
+	$resultado = $sniper->clase->array_orderby($matriz, 'campo2', SORT_ASC);
 
 ```
 
@@ -81,7 +83,8 @@ $matriz[0] = array(	'campo1' => 1,
 Para llamar a este método aremos...
 
 ```
-	$resultado = $this->shuffle_assoc($matriz);
+	$sniper = $this->cargaSniper('arrayorder');
+	$resultado = $sniper->clase->shuffle_assoc($matriz);
 ```
 
 Se obtiene dentro de `resultado` el array que pasemos pero de forma aleatoria.
@@ -93,7 +96,8 @@ Se obtiene dentro de `resultado` el array que pasemos pero de forma aleatoria.
 Para llamar a este método ...
 
 ```
-$resultado = $this->elimina_duplicados($matriz,$campo);
+	$sniper = $this->cargaSniper('arrayorder');
+	$resultado = $sniper->clase->elimina_duplicados($matriz,$campo);
 
 ```
 
