@@ -37,19 +37,17 @@ class paginador_SN
 	public function setInicio()
 	{
 		if($this->getPagina()==1){
-			$reginicio = $this->getPagina();
+			$reginicio = (($this->getRegpagina()*$this->getPagina())-$this->getRegpagina()); //$this->getPagina();
 			} else {
-			$reginicio = $this->getPagina()*$this->getRegpagina();	
+			$reginicio = (($this->getRegpagina()*$this->getPagina())-$this->getRegpagina()); //$this->getPagina()*$this->getRegpagina();	
 			}
 		
 
-		if($reginicio==1) {
-				$reginicio=$reginicio; } 
-				else {
-				$reginicio=$reginicio+1; }
+		//if($reginicio==1) { $reginicio=$reginicio-1; } 
 				
-		$this->reginicio = $reginicio - $this->getRegpagina();
-		if($this->reginicio<1) {$this->reginicio = 1;}
+		//$this->reginicio = $reginicio - $this->getRegpagina();
+		if($reginicio<1) {$reginicio = 0;}
+		$this->reginicio = $reginicio;
 		return $this;
 	}
 	
@@ -64,8 +62,10 @@ class paginador_SN
 	
 	public function setFinal()
 	{
-		$regfinal = $this->getPagina()*$this->getRegpagina();
+		$regfinal = $this->getPagina()*$this->getRegpagina()-1;
 		$this->regfinal = $regfinal;
+		
+		if($this->getPagina()==$this->getTotalpaginas()) { $this->regfinal=$this->regfinal+1; }
 		return $this;
 	}
 	
