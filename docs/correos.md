@@ -116,8 +116,8 @@ $sniper->clase->MenErrorVer['correo']  = Si es 1 se ha producido un error al  ve
 
 De esta forma podemos sacar estos valores: 
 
-$correo['name'] = Equivale al nombre del input.
-$correo['dato'] = Equivale al valor del input enviado y procesado.
+- $correo['name'] = Equivale al nombre del input.
+- $correo['dato'] = Equivale al valor del input enviado y procesado.
  
 
 
