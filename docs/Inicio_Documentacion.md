@@ -52,7 +52,7 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 - [Ale][7] : Crea cadenas de números y letras aleatoriamente.
 - [esRobot][8] : Comprueba si una visita es un robot o un usario.
 - [Formatostxt][9] : Para pasar formatos a los textos.
-
+- [Correos][10] : Verificación de datos para envio de correos.
 
 [1]: https://github.com/Didweb/MyT
 [2]: mapeatxt.md
@@ -63,3 +63,4 @@ Para llamar a un metodo seria: `$sniper->clase->NOMBRE_METODO(PARAMETROS)`.
 [7]: ale.md
 [8]: esrobot.md
 [9]: formatostxt.md
+[10]: correos.md
