@@ -183,6 +183,13 @@ class correos_SN
 	}
 	
 	
+	public function getErrores()
+	{
+		return $this->MenErrorVer();
+		
+	}
+	
+	
 	public function mostrarErrores()
 	{
 		foreach($this->MenErrorVer as $nom=>$val){
