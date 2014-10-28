@@ -111,6 +111,12 @@ Las variables que devuelve son:
 
 $sniper->clase->MenErrorVer['errores'] = Si es 1 se ha producido algún tipo de error.
 $sniper->clase->MenErrorVer['correo']  = Si es 1 se ha producido un error al  verificar un correo y este ha resultado no tener un formato de e-mail correcto.
+$sniper->clase->MenErrorVer['errorVerificarCorreo'] = Deveuelve la cadena "Correo no Valido"
+$sniper->clase->MenErrorVer['errorVerificacion'] = Deveuelve la cadena "Se han producido errores"
+$sniper->clase->MenErrorVer['errorDatos'] = Deveuelve la cadena "Error en los datos, falta Destion o Tipos de verificación"
+$sniper->clase->MenErrorVer['errorDatos2'] = Los datos de verificación deben venir en forma de ARRAY"
+
+Se pueden mostrar todos el array de errores con el método: `$sniper->clase->mostrarErrores();`
 
 `$correo` en este caso almacena en un array los valores y su nombre para procesar en el envío de mails.
 

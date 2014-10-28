@@ -15,14 +15,15 @@ class correos_SN
 	public function inicio($destino=null,$verificar=null)
 	{
 	 if($destino==null || $verificar==null){
-		 echo "<br>Error en los datos, falta Destion o Tipos de verificación";
+		
+		 $this->MenErrorVer['errorDatos']="Error en los datos, falta Destion o Tipos de verificación";
 		 return null; }	
 		 else {
 			 
 		$this->setDestino($destino);	
 		$ver = $this->setVerificar($verificar);
 		if(is_null ( $ver)) {
-			echo "<br>Los datos de verificación deben venir en forma de ARRAY";
+			 $this->MenErrorVer['errorDatos2']="Los datos de verificación deben venir en forma de ARRAY";
 			return null; 
 			}
 		}
@@ -50,7 +51,7 @@ class correos_SN
 	{
 		if($this->puntear()==null){
 
-		echo "<br> Se han producido errores";	
+		 $this->MenErrorVer['errorVerificacion']="Se han producido errores";	
 		} else {
 			
 		return $this->datos;	
@@ -71,6 +72,7 @@ class correos_SN
 			}
 			
 		if($errorpuntear==1){
+			$this->MenErrorVer['errorPuntear']="Valores No son Un Array";
 			return null;
 			} else {
 			
@@ -100,6 +102,7 @@ class correos_SN
 			
 			
 			if($this->MenErrorVer['errores']==1){
+				
 				return null; } else {
 					
 				return $this->getDatos($datos);}
@@ -126,7 +129,8 @@ class correos_SN
 				return true;} 
 			else {
 			$this->MenErrorVer['errores']	= 1;
-			$this->MenErrorVer['correo']	= 1;	
+			$this->MenErrorVer['correo']	= 1;
+			$this->MenErrorVer['errorVerificarCorreo']="Correo no Valido";	
 				return false;}
 			
 		
@@ -178,6 +182,14 @@ class correos_SN
 		return $this->verificar;
 	}
 	
+	
+	public function mostrarErrores()
+	{
+		foreach($this->MenErrorVer as $nom=>$val){
+			echo "<br> [$nom] <b style='color:red;'>".$this->MenErrorVer[$nom].'</b>';
+			}	
+		
+	}
 	
 }
 ?>
